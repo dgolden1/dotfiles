@@ -51,9 +51,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git-prompt)
 
 source $ZSH/oh-my-zsh.sh
+# source ~/arterys/repos/zsh-git-prompt/zshrc.sh
 
 # User configuration
 
@@ -86,3 +87,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Autojump https://github.com/joelthelion/autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# Git prompt
+# PROMPT='%B%~%b$(git_super_status) %# '
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Local config
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
