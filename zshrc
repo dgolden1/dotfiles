@@ -85,6 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# PATHs
+export PATH=~/anaconda3/bin:/usr/local/bin:$PATH
+
 # Autojump https://github.com/joelthelion/autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
