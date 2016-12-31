@@ -51,7 +51,7 @@ ZSH_THEME="dgolden1"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git-prompt)
+plugins=(git git-prompt)
 
 source $ZSH/oh-my-zsh.sh
 # source ~/arterys/repos/zsh-git-prompt/zshrc.sh
@@ -93,6 +93,10 @@ export PATH=~/anaconda3/bin:/usr/local/bin:$PATH
 
 # Git prompt
 # PROMPT='%B%~%b$(git_super_status) %# '
+
+# Aliases
+alias jnb='jupyter notebook'
+alias jnbb='jupyter notebook --no-browser'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
