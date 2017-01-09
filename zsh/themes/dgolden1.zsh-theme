@@ -6,7 +6,7 @@
 
 # Git prompt
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
-source ~/.git-prompt.sh
+# source ~/.git-prompt.sh
 
 local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
 # PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(__git_ps1 " (%s)") '

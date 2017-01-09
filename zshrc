@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # PATHs
 export PATH=~/anaconda3/bin:/usr/local/bin:$PATH
 
-if [ "$(uname)" == "Darwin" ]; then
+if [ "$(uname)" = "Darwin" ]; then
   # Autojump https://github.com/joelthelion/autojump
   [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
