@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/dgolden/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -88,8 +88,12 @@ source $ZSH/oh-my-zsh.sh
 # PATHs
 export PATH=~/anaconda3/bin:/usr/local/bin:$PATH
 
-# Autojump https://github.com/joelthelion/autojump
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+if [ "$(uname)" == "Darwin" ]; then
+  # Autojump https://github.com/joelthelion/autojump
+  [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+  test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+fi
 
 # Git prompt
 # PROMPT='%B%~%b$(git_super_status) %# '
@@ -97,19 +101,19 @@ export PATH=~/anaconda3/bin:/usr/local/bin:$PATH
 # Aliases
 alias jnb='jupyter notebook'
 alias jnbb='jupyter notebook --no-browser'
+# SSH into EC2 instance
+alias sse='ssh -i ~/.ssh/dan-key.pem'
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/dgolden/google-cloud-sdk/path.zsh.inc ]; then
-  source '/Users/dgolden/google-cloud-sdk/path.zsh.inc'
+if [ -f ~/google-cloud-sdk/path.zsh.inc ]; then
+  source ~/google-cloud-sdk/path.zsh.inc
 fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f /Users/dgolden/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/Users/dgolden/google-cloud-sdk/completion.zsh.inc'
+if [ -f ~/google-cloud-sdk/completion.zsh.inc ]; then
+  source ~/google-cloud-sdk/completion.zsh.inc
 fi
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-
