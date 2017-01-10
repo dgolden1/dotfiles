@@ -106,6 +106,7 @@ fi
 # Aliases
 alias jnb='jupyter notebook'
 alias jnbb='jupyter notebook --no-browser'
+alias tma='tmux attach || tmux'
 # SSH into EC2 instance
 alias sse='ssh -i ~/.ssh/dan-key.pem'
 
