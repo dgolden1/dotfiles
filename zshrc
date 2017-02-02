@@ -103,6 +103,10 @@ fi
 # Git prompt
 # PROMPT='%B%~%b$(git_super_status) %# '
 
+# Keys
+# CTRL+U kills left of line, not entire line
+bindkey \^U backward-kill-line
+
 # Aliases
 alias jnb='jupyter notebook'
 alias jnbb='jupyter notebook --no-browser'
