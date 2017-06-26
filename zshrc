@@ -126,3 +126,6 @@ fi
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+# Qt
+export PATH="/usr/local/opt/qt/bin:$PATH"

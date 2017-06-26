@@ -12,3 +12,4 @@ sns.set_context('notebook', font_scale=1.5)
 
 # Show more characters per line than the default of 80
 pd.options.display.width = 120
+# pd.options.display.max_colwidth = 80
