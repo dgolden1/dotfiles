@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # PATHs
-export PATH=~/anaconda3/bin:/usr/local/bin:$PATH
+export PATH=~/anaconda3/bin:~/miniconda3/bin:/usr/local/bin:$PATH
 
 if [ "$(uname)" = "Darwin" ]; then
   # Autojump https://github.com/joelthelion/autojump
