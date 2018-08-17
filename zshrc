@@ -113,6 +113,7 @@ alias jnbb='jupyter notebook --no-browser'
 alias tma='tmux attach || tmux'
 # SSH into EC2 instance
 alias sse='ssh -i ~/.ssh/dan-key.pem'
+alias sd='source deactivate'
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f ~/google-cloud-sdk/path.zsh.inc ]; then
