@@ -114,6 +114,7 @@ alias tma='tmux attach || tmux'
 # SSH into EC2 instance
 alias sse='ssh -i ~/.ssh/dan-key.pem'
 alias sd='source deactivate'
+alias beepme='for run in {1..10}; do tput bel && sleep 0.2; done'
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f ~/google-cloud-sdk/path.zsh.inc ]; then
